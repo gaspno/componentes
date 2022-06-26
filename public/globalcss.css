@@ -1,0 +1,95 @@
+body{ 
+    
+    font-size: 18px;
+    color:white;
+    background-image: linear-gradient(90deg, rgb(8, 0, 255),rgb(0, 51, 255),rgb(0, 115, 255) );
+    background-repeat: no-repeat;
+    
+}
+.ui-comments{
+    background-color:rgb(228, 91, 91);
+    
+    padding: 5px
+}
+
+.ui-comments a:visited{
+    color:rgb(48, 207, 209)
+}
+.ui-comments a:hover{
+    color:white;
+}
+
+a:hover{
+    color:white;
+}
+a:visited{
+    color:rgb(243, 5, 5)
+}
+
+.element{
+    display:inline-block;
+    padding:5px; 
+    text-align: center;
+  
+}
+.imgTag{
+    float:left;
+    margin-top:5px;
+    margin-left:5px
+}
+
+.text{
+    word-wrap: break-word;
+    text-align: justify;
+
+}
+
+.question{
+    
+    text-align: center;
+}
+
+.aprovalCard{
+    border:1px yellow solid;
+    width: 35%;
+    padding: 5px;
+    background-color:rgb(91, 196, 228);
+    margin: 5px
+}
+
+.content{
+    width:80%;
+    
+}
+.avatar{
+    width:20%;
+    
+    
+}
+.comment{
+    border:3px rgb(6, 13, 215) solid;
+    
+}
+
+.aprove{
+  background-color:blue;
+  text-align: center;
+
+}
+.reprove{
+    background-color:red;
+    text-align: center;
+}
+
+.option{
+    display:flex;    
+    flex-wrap: nowrap;
+    border:1px rgb(0, 255, 94) solid;
+    justify-content: space-around;
+    
+}
+.option div{
+    
+    width: 40%;
+    height: 100%
+}

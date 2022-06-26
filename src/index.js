@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {faker} from '@faker-js/faker'
+import Comment from './components/Comentario'
+import AprovalCard from './components/AprovalCard' 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App=()=>{
+
+    return(<>
+    <div className="ui-comments">
+        <AprovalCard>
+        
+        <Comment 
+        author="manuel"
+        text="meu texto próprio"
+        date="hoje"
+        avatar={faker.image.avatar()}
+        />
+        </AprovalCard>
+        <AprovalCard><Comment author="evandro" text="meu próprio" date="ontem" avatar={faker.image.avatar()}/></AprovalCard>
+        <AprovalCard><Comment author="carlos" text="meu texto" date="hoje" avatar={faker.image.avatar()}/></AprovalCard>
+        <AprovalCard><Comment author="julia" text="meu caderno" date="amanhã" avatar={faker.image.avatar()}/></AprovalCard>
+        </div>
+        </>
+        )
+
+}
+
+
+ReactDOM.render(<App/>,document.getElementById('root'))
